@@ -15,11 +15,11 @@ import seaborn as sns
 @st.cache_data
 def load_data():
     try:
-        # Print current directory for debugging
-        st.write("Current directory:", os.getcwd())
+        # # Print current directory for debugging
+        # st.write("Current directory:", os.getcwd())
 
-        # List files in the directory for debugging
-        st.write("Files in directory:", os.listdir())
+        # # List files in the directory for debugging
+        # st.write("Files in directory:", os.listdir())
 
         # Load data
         file_path = "dashboard/main_data.csv"
