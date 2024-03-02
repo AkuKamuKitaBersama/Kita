@@ -14,10 +14,10 @@ import streamlit as st
 def load_data():
     try:
         # Print current directory for debugging
-        print("Current directory:", os.getcwd())
+        st.write("Current directory:", os.getcwd())
 
         # List files in the directory for debugging
-        print("Files in directory:", os.listdir())
+        st.write("Files in directory:", os.listdir())
 
         # Load data
         file_path = "dashboard/main_data.csv"
@@ -30,6 +30,7 @@ def load_data():
 # Load data
 main_data = load_data()
 
-# Check the first few rows of the loaded data for further debugging
-print(main_data.head())
+# Display the first few rows of the loaded data for further debugging
+st.write("First few rows of the loaded data:")
+st.write(main_data.head())
 
