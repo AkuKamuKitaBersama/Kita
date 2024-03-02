@@ -16,7 +16,7 @@ plt.rcParams['figure.facecolor'] = 'white'
 # Load the dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv("./main_data.csv")
+    return pd.read_csv("main_data.csv")
 
 def monthly_count(data):
     # Define the order of the months
