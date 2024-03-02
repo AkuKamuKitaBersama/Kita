@@ -1,5 +1,5 @@
 # Bike Sharing Dashboard
-**Tugas Akhir Proyek Analisis Data **
+**Tugas Akhir Proyek Analisis Data**
 
 ## Setup environment
 ```
@@ -13,9 +13,9 @@ pip install numpy pandas matplotlib seaborn jupyter streamlit
 streamlit run dashboard.py
 ```
 
-=========================================	
+
 ## Dataset characteristics
-=========================================	
+'''
 Both hour.csv and day.csv have the following fields, except hr which is not available in day.csv
 	
 	- instant: record index
@@ -57,5 +57,5 @@ For main_data.csv
 	- casual: count of casual users
 	- registered: count of registered users
 	- cnt: count of total rental bikes including both casual and registered
-	
+'''
 =========================================
