@@ -22,6 +22,7 @@ def load_data():
         # st.write("Files in directory:", os.listdir())
 
         # Load data
+        #file_path = "./main_data.csv"
         file_path = "dashboard/main_data.csv"
         df = pd.read_csv(file_path)
         return df
@@ -456,6 +457,7 @@ with tab4:
     plt.xlabel('Date')
     plt.ylabel('Total Count')
     plt.xticks(rotation=45)
+    plt.grid(True)
     plt.show()
     st.pyplot(weekly)
     
