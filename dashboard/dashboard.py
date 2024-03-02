@@ -10,7 +10,7 @@ import os
 import pandas as pd
 import streamlit as st
 
-@st.cache
+@st.cache_data
 def load_data():
     try:
         # Print current directory for debugging
