@@ -24,23 +24,23 @@ def load_data():
         st.error("Failed to load data. File not found.")
         return None
 
-# def monthly_count(data):
-#     # Define the order of the months
-#     month_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    
-#     # Convert 'month' column to categorical with the specified order
-#     data['month'] = pd.Categorical(data['month'], categories=month_order, ordered=True)
-    
-#     # Group by 'month' and aggregate the total counts
-#     return data.groupby('month').agg({'total_count': 'sum'}).reset_index()
 def monthly_count(data):
+    # Define the order of the months
     month_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    if 'month' in data.columns:  # Check if 'month' column exists
-        data['month'] = pd.Categorical(data['month'], categories=month_order, ordered=True)
-        return data.groupby('month').agg({'total_count': 'sum'}).reset_index()
-    else:
-        st.error("Column 'month' not found in the data.")
-        return None
+    
+    # Convert 'month' column to categorical with the specified order
+    data['month'] = pd.Categorical(data['month'], categories=month_order, ordered=True)
+    
+    # Group by 'month' and aggregate the total counts
+    return data.groupby('month').agg({'total_count': 'sum'}).reset_index()
+# def monthly_count(data):
+#     month_order = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+#     if 'month' in data.columns:  # Check if 'month' column exists
+#         data['month'] = pd.Categorical(data['month'], categories=month_order, ordered=True)
+#         return data.groupby('month').agg({'total_count': 'sum'}).reset_index()
+#     else:
+#         st.error("Column 'month' not found in the data.")
+#         return None
 
 
 
