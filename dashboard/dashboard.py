@@ -91,6 +91,7 @@ st.set_page_config(
 
 # Load the cleaned data
 main_data = load_data()
+main_data.head()
 
 # Center-align the title
 st.markdown("<h1  style='text-align: center;'>Bike Sharing Data Visualization</h1>", unsafe_allow_html=True)
