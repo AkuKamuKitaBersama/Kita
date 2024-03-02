@@ -49,12 +49,12 @@ Information about `main_data.csv`:
 - `holiday`: category, day is holiday or not
 - `weekday`: category, day of the week ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')
 - `workingday`: category, if day is neither weekend nor holiday is YES, otherwise is No.
-- `weathersit`: category (Clear, Misty, Light_RainSnow, Heavy_RainSnow)
+- `weather`: category (Clear, Misty, Light_RainSnow, Heavy_RainSnow)
 - `temp`: float, temperature in Celsius. The values are multiplied by 41 (max)
 - `atemp`: float, feeling temperature in Celsius. The values are multiplied by 50 (max)
-- `hum`: float, humidity. The values are multiplied by 100 (max)
+- `humidity`: float, humidity. The values are multiplied by 100 (max)
 - `windspeed`: float, wind speed. The values are multiplied by 67 (max)
 - `casual`: count of casual users
 - `registered`: count of registered users
-- `cnt`: count of total rental bikes including both casual and registered
+- `total_count`: count of total rental bikes including both casual and registered
 ```
